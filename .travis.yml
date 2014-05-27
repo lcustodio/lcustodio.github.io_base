@@ -10,17 +10,17 @@ rvm:
 script: script/cibuild
 after_script:
 - script/rebund upload
-notifications:
-  irc:
-    on_success: change
-    on_failure: change
-    channels:
-    - irc.freenode.org#jekyll
-    template:
-    - '%{repository}#%{build_number} (%{branch}) %{message} %{build_url}'
-  email:
-    on_success: never
-    on_failure: never
+#notifications:
+#  irc:
+#    on_success: change
+#    on_failure: change
+#    channels:
+#    - irc.freenode.org#jekyll
+#    template:
+#    - '%{repository}#%{build_number} (%{branch}) %{message} %{build_url}'
+#  email:
+#    on_success: never
+#    on_failure: never
 env:
   global:
   - secure: bt5nglPTdsc0N5fB1dOJz2WbM81dGpDuVD8PnhEsxgUfoo6xavhU4+pNrUADlSUqQ1aJrdU+MKW4x+JZ2ZnJS8vOpNzRymuMZSbFaljK4pgFGiKFgBdMKxVikvoYcxKCjLAl7NJZ11W6hUw+JtJScClDZwrJJAQB6I7Isp/LsdM=
